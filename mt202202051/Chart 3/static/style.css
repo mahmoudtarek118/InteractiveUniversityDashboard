@@ -1,0 +1,76 @@
+/* Base styles for the dashboard */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f5f5f5; /* Light gray background color */
+    font-family: 'Arial', sans-serif; /* Consistent, colorblind-friendly font */
+    color: #2a2a2a; /* Slightly lighter than pure black for a softer look */
+}
+
+/* Styles for the main heading */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #204a87; /* Dark blue for the main heading */
+    padding: 20px 0; /* Space above and below the heading */
+    margin-bottom: 30px; /* Additional space below the heading */
+}
+
+/* Update the color for titles within charts if needed */
+.chart-title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333; /* Keeping the titles dark for contrast */
+}
+
+/* Flexbox container for rows of charts */
+.chart-row {
+    display: flex;
+}
+
+/* Base styles for each chart container */
+.chart {
+    flex: 1; /* Each chart will take an equal amount of space within its container */
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding in the width and height calculations */
+    margin: 5px; /* Optional: adds space between the charts */
+    background-color: #ffffff; /* White background for contrast */
+    border: 1px solid #ccc; /* Border for chart containers */
+}
+
+/* Specific styles for individual charts to control height */
+#chartdiv1, #chartdiv3 {
+    height: 400px; /* Adjust the height as needed for Chart 1 and 3 */
+}
+
+#chartdiv2, #chartdiv4 {
+    height: 400px; /* Adjust the height as needed for Chart 2 and 4 */
+}
+
+/* Ensure that the text and other elements inside the chart are styled correctly */
+.chart-title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.axis-label {
+    font-size: 14px;
+}
+
+.data-label {
+    font-size: 12px;
+}
+
+.legend {
+    font-size: 14px;
+}
+
+/* Add responsive behavior if necessary */
+@media (max-width: 768px) {
+    .chart-row {
+        flex-direction: column;
+    }
+}
